@@ -20,16 +20,19 @@ const Header = (props) => {
   });
 
   return (
+
+    
     <motion.div
-      variants={headerVariants}
-      initial="hidden"
-      whileInView="show"
-      className={`paddings ${css.wrapper}`}
-      viewport={{ once: true, amount: 0.25 }}
-      style={{ boxShadow: headerShadow, background: props.theme==='light' ? "#fff" : "#000" }}
+    variants={headerVariants}
+    initial="hidden"
+    whileInView="show"
+    className={`paddings ${css.wrapper}`}
+    viewport={{ once: true, amount: 0.25 }}
+    style={{ boxShadow: headerShadow, background: props.theme==='light' ? "#fff" : "#000" }}
     >
+    <a className="anchor" id="head"></a>
       <div className={`innerWidth ${css.container} flexCenter`}>
-        <div className={css.name}>Hammad.</div>
+        <div className={css.name}><Link to="/">Hammad.</Link></div>
 
           <ul
             className={`flexCenter ${css.menu}`}
@@ -38,11 +41,11 @@ const Header = (props) => {
             id="menu"
             
           >
-            <li><a href="/experties">Services</a></li>
-            <li><a href="/work">Experience</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/people">Testimonials</a></li>
-            <li><Link to="/exploremore">Projects</Link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><a href="#experties">Services</a></li>
+            <li><a href="#work">Experience</a></li>
+            <li><a href="#people">Testimonials</a></li>
+            <li><a href="#portfolio">Projects</a></li>
           </ul>
 
 

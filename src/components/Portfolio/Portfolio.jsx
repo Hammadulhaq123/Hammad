@@ -21,9 +21,9 @@ const Portfolio = (props) => {
         <motion.div variants={textVariant(.4)} className={`flexCenter ${css.heading}`}>
           <div>
             <span className="primaryText">My Latest Works</span>
-            <p style={{marginTop: "10px"}}>Perfect solution for digital experience</p>
+            <p style={{marginTop: "10px"}}>I love thinking what no one else ever thought.</p>
           </div>
-          <span className="secondaryText"><Link to="#exploremore">Explore More Works</Link></span>
+          <span className="secondaryText"><Link to="/exploremore">Explore More Works</Link></span>
         </motion.div>
 
 
@@ -31,9 +31,9 @@ const Portfolio = (props) => {
             <motion.img variants={fadeIn("up", "tween", .5, .6)} src="./pr1.gif" alt="project" />
             <motion.img variants={fadeIn("up", "tween", .7, .6)} src="./pr3.png" alt="project" />
             <motion.img variants={fadeIn("up", "tween", .9, .6)} src="./pr2.gif" alt="project" />
-            <motion.img variants={fadeIn("up", "tween", .5, .6)} src="./pt4.gif" alt="project" />
+            {/* <motion.img variants={fadeIn("up", "tween", .5, .6)} src="./pt4.gif" alt="project" />
             <motion.img variants={fadeIn("up", "tween", .7, .6)} src="./pr5.png" alt="project" />
-            <motion.img variants={fadeIn("up", "tween", .9, .6)} src="./pr6.gif" alt="project" />
+            <motion.img variants={fadeIn("up", "tween", .9, .6)} src="./pr6.gif" alt="project" /> */}
         </div>
       </div>
     </motion.section>

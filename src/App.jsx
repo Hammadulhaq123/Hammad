@@ -56,6 +56,7 @@ const App = () => {
             path="/"
             element={
               <>
+                <Hero theme={theme}/>
                 <Experties theme={theme} />
                 <Work theme={theme} />
                 <Portfolio theme={theme} />
@@ -64,7 +65,7 @@ const App = () => {
               </>
             }
           />
-          <Route path="/exploremore" element={<Explore />} />
+          <Route path="/exploremore" element={<Explore theme={theme}/>} />
         </Routes>
     </Router>
   )

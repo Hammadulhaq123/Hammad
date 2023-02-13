@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 const Hero = (props) => {
   return (
     <section className={`paddings ${css.wrapper}`}>
+
+      <a className="anchor" id="hero"></a>
+
+
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -18,10 +22,10 @@ const Hero = (props) => {
             <br />
             I'm Hammad.
           </motion.span>
-          <motion.span className="secondaryText"variants={fadeIn("left", "tween", 0.4, 1)}>
+          <motion.span className="secondaryText" variants={fadeIn("left", "tween", 0.4, 1)} style={{ zIndex: "999" }}>
             I develop responsive web applications,
             <br />
-             And I always love learning{" "}
+            And I always love learning{" "}
           </motion.span>
         </div>
 
@@ -46,8 +50,8 @@ const Hero = (props) => {
           </motion.div>
 
           <motion.div variants={fadeIn("left", "tween", 0.5, 1)} className={css.certificate}>
-            <div className="circle flexCenter" style={{width:"50px", height:"50px", fontSize:"38px", fontWeight:"700"}}>
-                &copy;
+            <div className="circle flexCenter" style={{ width: "50px", height: "50px", fontSize: "38px", fontWeight: "700" }}>
+              &copy;
             </div>
 
             <span>CERTIFIED PROFESSIONAL</span>

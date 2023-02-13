@@ -148,6 +148,7 @@ export const staggerChildren = {
 export const getMenuStyles = (menuOpened) => {
   if (document.documentElement.clientWidth <= 640) {
     // console.log("outside of sidebar reached");
-    return { right: !menuOpened && "-100%" };
+    document.body.style.overflowX = "hidden";
+    return { right: !menuOpened && "-100%", display: !menuOpened && "none"};
   }
 };
