@@ -44,7 +44,7 @@ const Header = (props) => {
             <li><Link to="/">Home</Link></li>
             <li><a href="#experties">Services</a></li>
             <li><a href="#work">Experience</a></li>
-            <li><a href="#people">Testimonials</a></li>
+            <li><Link to="/cv">CV</Link></li>
             <li><a href="#portfolio">Projects</a></li>
           </ul>
 

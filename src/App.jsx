@@ -13,6 +13,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Cv from "./components/Cv/Cv";
 
 
 const App = () => {
@@ -66,6 +67,7 @@ const App = () => {
             }
           />
           <Route path="/exploremore" element={<Explore theme={theme}/>} />
+          <Route path="/cv" element={<Cv theme={theme}/>} />
         </Routes>
     </Router>
   )
