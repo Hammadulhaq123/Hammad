@@ -12,7 +12,7 @@ const Cv = (props) => {
         <section className={`paddings ${css.wrapper}`}>
             <div className={css.leftSide} style={{ background: props.theme === "light" ? "#4a4a4a" : "orange", color: props.theme === "light" ? "white" : "#000" }}>
 
-                <img className={css.image} src="main2.jpg" alt="My Image" />
+                <img className={css.image} src="./main2.jpeg" alt="My Image" />
                 <div className={css.names}>
                     <h2>Hammad ul haq</h2>
                     <h3>Web Dev.</h3>
